@@ -1,1 +1,35 @@
-.wrapper
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  .wrapper__container {
+    width: 90vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: 200;
+      margin-top: 0.1rem;
+    }
+
+    .wrapper__coin {
+      display: flex;
+    }
+
+    .wrapper__button {
+        button{
+            border:none;
+            width: 8em;
+        }
+    }
+  }
+}

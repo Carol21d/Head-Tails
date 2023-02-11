@@ -1,18 +1,42 @@
-/* Error: expected "{".
- *   ,
- * 1 | .wrapper
- *   |         ^
- *   '
- *   src\coins.scss 1:9   @import
- *   src\styles.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 1 \2502  .wrapper\a   \2502          ^\a   \2575 \a   src\\coins.scss 1:9   @import\a   src\\styles.scss 1:9  root stylesheet';
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
+.wrapper .wrapper__container {
+  width: 90vh;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .wrapper__container h1 {
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 200;
+  margin-top: 0.1rem;
+}
+.wrapper .wrapper__container .wrapper__coin {
+  display: flex;
+}
+.wrapper .wrapper__container .wrapper__button button {
+  border: none;
+  width: 8em;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  background-color: aquamarine;
+}
+
+/*# sourceMappingURL=styles.css.map */
